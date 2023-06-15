@@ -16,11 +16,17 @@ class PlayerController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    // public function index()
+    // {
+    //     return new PlayerCollection(Player::latest()->paginate());
+    // }
+
     public function index()
     {
-        return new PlayerCollection(Player::latest()->paginate());
-    }
+        $players = Player::with('skill')->latest()->paginate();
 
+        return new PlayerCollection($players);
+    }
     /**
      * Store a newly created resource in storage.
      *
@@ -40,6 +46,9 @@ class PlayerController extends Controller
      */
     public function show(Player $player)
     {
+        // Cargar la relación skill
+        $player->load('skill');
+
         return new PlayerResource($player);
     }
 

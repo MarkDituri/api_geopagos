@@ -21,6 +21,14 @@ class PlayerResource extends JsonResource
             'gender' => $this->gender,
             'slug' => $this->slug,
             'skill_id' => $this->skill_id,
+            'skill' => $this->whenLoaded('skill', function () {
+                return [
+                    'aim' => $this->skill->aim,
+                    'speed' => $this->skill->speed,
+                    'energy' => $this->skill->energy,
+                    'luck' => $this->skill->luck,                    
+                ];
+            }),
             'created_at' => $this->published_at
         ];
     }
