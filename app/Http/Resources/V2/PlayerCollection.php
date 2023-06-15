@@ -1,0 +1,32 @@
+<?php
+
+namespace App\Http\Resources\V2;
+
+use Illuminate\Http\Resources\Json\ResourceCollection;
+
+class PlayerCollection extends ResourceCollection
+{
+
+    public $collects = PlayerResource::class;
+
+    /**
+     * Transform the resource collection into an array.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return array
+     */
+    public function toArray($request)
+    {
+        return [
+            'data' => $this->collection,
+            'meta' => [
+                'organization' => 'Geopagos',
+                'authors' => [
+                    'Mrcos',
+                    'Dituri'
+                ]
+            ],
+            'type' => 'challenge'
+        ];
+    }
+}

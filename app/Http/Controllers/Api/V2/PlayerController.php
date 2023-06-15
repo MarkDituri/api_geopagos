@@ -3,10 +3,11 @@
 namespace App\Http\Controllers\Api\V2;
 
 use App\Http\Controllers\Controller;
-use App\Models\Post;
+use App\Models\Player;
 use Illuminate\Http\Request;
 
 use App\Http\Resources\V2\PlayerResource;
+use App\Http\Resources\V2\PlayerCollection;
 
 class PlayerController extends Controller
 {
@@ -17,7 +18,7 @@ class PlayerController extends Controller
      */
     public function index()
     {
-        return new PlayerResource(Post::latest()->paginate());
+        return new PlayerCollection(Player::latest()->paginate());
     }
 
     /**
@@ -37,9 +38,9 @@ class PlayerController extends Controller
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function show(Post $post)
+    public function show(Player $player)
     {
-        return new PlayerResource($post);
+        return new PlayerResource($player);
     }
 
     /**
@@ -49,7 +50,7 @@ class PlayerController extends Controller
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Post $post)
+    public function update(Request $request, Player $player)
     {
         //
     }
@@ -60,7 +61,7 @@ class PlayerController extends Controller
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Post $post)
+    public function destroy(Player $post)
     {
         //
     }

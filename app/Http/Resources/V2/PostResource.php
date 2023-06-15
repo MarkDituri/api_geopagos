@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Resources\V2;
-
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class PostResource extends JsonResource
@@ -24,6 +23,6 @@ class PostResource extends JsonResource
                 'email' => $this->user->email,
             ],
             'created_at' => $this->published_at
-        ];
+        ]; 
     }
 }

@@ -1,7 +1,8 @@
 <?php
 
 namespace Database\Seeders;
-
+// PlayersTableSeeder.php
+use App\Models\Skill;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -15,5 +16,7 @@ class DatabaseSeeder extends Seeder
     {
         \App\Models\User::factory(10)->create();
         \App\Models\Post::factory(120)->create();
+        \App\Models\Skill::factory(16)->create();
+        \App\Models\Player::factory(16)->create();
     }
 }

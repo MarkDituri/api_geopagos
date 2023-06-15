@@ -9,9 +9,13 @@ class Player extends Model
 {
     use HasFactory;
 
-    public function getExcerptAttribute()
+    // protected $primaryKey = 'id_player'; // Definir la clave primaria personalizada
+
+    // protected $fillable = ['id_player', 'first_name', 'age', 'gender', 'slug'];
+
+    public function Skill()
     {
-        return substr($this->content, 0, 120);
+        return $this->belongsTo(Skill::class);
     }
 
     public function getPublishedAtAttribute()
