@@ -17,15 +17,7 @@ class PlayerCollection extends ResourceCollection
     public function toArray($request)
     {
         return [
-            'data' => $this->collection,
-            'meta' => [
-                'organization' => 'Geopagos',
-                'authors' => [
-                    'Mrcos',
-                    'Dituri'
-                ]
-            ],
-            'type' => 'challenge'
+            'data' => $this->collection,        
         ];
     }
 }

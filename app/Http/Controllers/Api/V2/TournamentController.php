@@ -3,12 +3,8 @@
 namespace App\Http\Controllers\Api\V2;
 
 use App\Http\Controllers\Controller;
-use App\Models\Player;
 use App\Models\Tournament;
-use Illuminate\Http\Request;
 
-use App\Http\Resources\V2\PlayerResource;
-use App\Http\Resources\V2\PlayerCollection;
 use App\Http\Resources\V2\TournamentResource;
 use App\Http\Resources\V2\TournamentCollection;
 
