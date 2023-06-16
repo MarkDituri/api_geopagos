@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\V2\PostController as Post;
 use App\Http\Controllers\Api\V2\PlayerController as player;
+use App\Http\Controllers\Api\V2\TournamentController as Tournament;
 
 Route::post('login', [
     App\Http\Controllers\Api\LoginController::class,
@@ -28,7 +29,6 @@ Route::apiResource('v2/posts', Post::class)
 Route::apiResource('v2/players', player::class)
     ->only(['index', 'show']);
 
-
-    // Players
+// Tournaments
 Route::apiResource('v2/tournaments', Tournament::class)
 ->only(['index', 'show']);

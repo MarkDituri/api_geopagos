@@ -18,5 +18,6 @@ class DatabaseSeeder extends Seeder
         \App\Models\Post::factory(120)->create();
         \App\Models\Skill::factory(16)->create();
         \App\Models\Player::factory(16)->create();
+        \App\Models\Tournament::factory(2)->create();
     }
 }

@@ -9,7 +9,6 @@ class Skill extends Model
 {
     use HasFactory;
 
-    // Define los campos de la tabla 'skills'
     protected $fillable = [
         'aim',
         'speed',
