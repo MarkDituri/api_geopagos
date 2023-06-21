@@ -15,45 +15,11 @@ class StartController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    // public function index()
-    // {
-    //     $tournaments = Tournament::latest()->get();
-
-    //     $players = Player::with('skill')->latest()->get();
-
-
-    //     return new PlayerCollection($players['first_name']);
-    // }
 
     public function index()
     {
-        $tournaments = Tournament::latest()->get();
-        $players = Player::with('skill')->latest()->get();
-
-        while ($players->count() > 1) {
-            $winners = collect();
-
-            // Jugar partidos en la ronda actual
-            for ($i = 0; $i < $players->count(); $i += 2) {
-                $player1 = $players[$i];
-                $player2 = $players[$i + 1];
-
-                // Simular el resultado del partido al azar
-                $result = mt_rand(1, 2);
-
-                // Determinar el ganador del partido
-                $winner = ($result == 1) ? $player1 : $player2;
-                $winners->push($winner);
-            }
-
-            // Actualizar la lista de jugadores para la siguiente ronda
-            $players = $winners;
-        }
-
-        $champion = $players[0];
-        echo "El campeón del torneo es el jugador número $champion";
+        return ['msg' => 'Debe ingresar un /genero'];
     }
-
 
     public function show($gender)
     {

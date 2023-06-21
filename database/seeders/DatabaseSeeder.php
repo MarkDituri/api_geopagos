@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Seeders;
-// PlayersTableSeeder.php
+
 use App\Models\Skill;
 use Illuminate\Database\Seeder;
 
