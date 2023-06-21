@@ -4,21 +4,20 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Carbon;
 
 class Tournament extends Model
 {
     use HasFactory;
 
-    // Define los campos de la tabla 'skills'
-
-    public function getPublishedAtAttribute()
+    public function getFormattedCreatedAtAttribute()
     {
-        return $this->created_at->format('d/m/Y');
+        $carbonDate = Carbon::parse($this->created_at);
+        return $carbonDate->format('d/m/Y H:i:s');
     }
 
     public function user()
     {
         return $this->belongsTo(User::class);
     }
-
 }

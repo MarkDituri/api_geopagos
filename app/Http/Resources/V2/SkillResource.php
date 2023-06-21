@@ -14,9 +14,9 @@ class PlayerResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'aim' => $this->aim,
+            'force' => $this->force,
             'speed' => $this->speed,
-            'energy' => $this->energy,
+            'response' => $this->response,
             'luck' => $this->luck,                 
         ];
     }

@@ -19,13 +19,14 @@ class PlayerResource extends JsonResource
             'last_name' => $this->last_name,
             'age' => $this->age,
             'gender' => $this->gender,
+            'country' => $this->country,
             'slug' => $this->slug,
             'skill_id' => $this->skill_id,
             'skill' => $this->whenLoaded('skill', function () {
                 return [
-                    'aim' => $this->skill->aim,
+                    'force' => $this->skill->force,
                     'speed' => $this->skill->speed,
-                    'energy' => $this->skill->energy,
+                    'response' => $this->skill->response,
                     'luck' => $this->skill->luck,                    
                 ];
             }),

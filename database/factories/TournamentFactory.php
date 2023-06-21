@@ -23,14 +23,16 @@ class TournamentFactory extends Factory
     public function definition()
     {
         static $genderOptions = ['male', 'female'];
-        $year = Carbon::now()->year;
 
         $gender = array_shift($genderOptions);
         array_push($genderOptions, $gender);
-
+        $year = Carbon::now()->year;
+ 
         return [
             'name' => $this->faker->firstName.' Cup '.$year,
+            'description' => $this->faker->text(320),
             'type' => 'playoffs',
+            'direction' => $this->faker->streetAddress,
             'year' => $year,
             'gender' => $gender,
             'slug' => $this->faker->slug,

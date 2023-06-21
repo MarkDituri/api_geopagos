@@ -23,14 +23,17 @@ class PlayerFactory extends Factory
     public function definition()
     {
         static $playerId = 1;
-        static $skillId = 1; 
-
+        static $skillId = 1;         
+        static $genderOptions = ['male', 'female'];
+        $gender = array_shift($genderOptions);
+        array_push($genderOptions, $gender);
+    
         return [
             'player_id' => $playerId++,
             'first_name' => $this->faker->firstName(),
             'last_name' => $this->faker->lastName(),            
             'age' => $this->faker->numberBetween(18, 40),
-            'gender' => $this->faker->randomElement(['Male', 'Female']),
+            'gender' => $gender,
             'country' => $this->faker->country(),
             'slug' => $this->faker->slug(),
             'skill_id' => $skillId++, // Asignar el ID relacionado y aumentar el contador

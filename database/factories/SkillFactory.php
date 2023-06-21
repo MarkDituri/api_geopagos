@@ -22,9 +22,9 @@ class SkillFactory extends Factory
     public function definition()
     {
         return [            
-            'aim' => $this->faker->numberBetween(40, 100),
+            'force' => $this->faker->numberBetween(20, 100),
             'speed' => $this->faker->numberBetween(45, 100),
-            'energy' => $this->faker->numberBetween(33, 100),
+            'response' => $this->faker->numberBetween(33, 100),
             'luck' => $this->faker->numberBetween(1, 111),       
         ];
     }

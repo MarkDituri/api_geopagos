@@ -16,11 +16,13 @@ class TournamentResource extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
+            'description' => $this->description,
             'type' => $this->type,
+            'direction' => $this->direction,
             'year' => $this->year,
             'gender' => $this->gender,
             'slug' => $this->slug,       
-            'created_at' => $this->published_at,
+            'created_at' => $this->formatted_created_at,
         ];
     }
 }

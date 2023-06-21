@@ -10,9 +10,9 @@ class Skill extends Model
     use HasFactory;
 
     protected $fillable = [
-        'aim',
+        'force',
         'speed',
-        'energy',
+        'response',
         'luck',
     ];
 }

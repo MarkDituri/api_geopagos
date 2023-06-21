@@ -9,10 +9,6 @@ class Player extends Model
 {
     use HasFactory;
 
-    // protected $primaryKey = 'id_player'; // Definir la clave primaria personalizada
-
-    // protected $fillable = ['id_player', 'first_name', 'age', 'gender', 'slug'];
-
     public function Skill()
     {
         return $this->belongsTo(Skill::class);

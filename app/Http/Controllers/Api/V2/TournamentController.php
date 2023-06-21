@@ -12,13 +12,11 @@ class TournamentController extends Controller
 {
     public function index()
     {
-        return new TournamentCollection(Tournament::latest()->paginate());
+        return new TournamentCollection(Tournament::latest()->get());
     }
 
-    public function show(Tournament $tournament)
+    public function show($gender)
     {
-        // Cargar la relación skill        
-
-        return new TournamentResource($tournament);
+        return new TournamentCollection(Tournament::where('gender', $gender)->latest()->get());
     }
 }
