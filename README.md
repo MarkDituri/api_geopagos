@@ -16,11 +16,12 @@ Proyecto challenge para geopagos, consiste en una API la cual permite arrojar re
 Podras encontrrar la documentacion detallada sobre la API aqui: [documentation](https://laravel.com/docs), de todos modos a continuacion dejo los fumdanos basicos de la api
 
 ## API URL PROD
- [https://apigeopagos.qudimar.com/api/v2/players](https://apigeopagos.qudimar.com/api/v2/players)
-      // Devuelve todos los jugadores enlistados
--     https://apigeopagos.qudimar.com/api/v2/tournaments
-      // Devuelve todos los torneos disponibles, en este caso 2 ( feminino y masculino )
--     https://apigeopagos.qudimar.com/api/v2/start/male
-      // Devuelve al resultado de un torneo, se puede variar entre /male o /female para filtrar que torneo simular
 
+[https://apigeopagos.qudimar.com/api/v2/players](https://apigeopagos.qudimar.com/api/v2/players)
+// Devuelve todos los jugadores enlistados
 
+[https://apigeopagos.qudimar.com/api/v2/tournaments](https://apigeopagos.qudimar.com/api/v2/tournaments)
+// Devuelve todos los jugadores enlistados
+
+[https://apigeopagos.qudimar.com/api/v2/start/male](https://apigeopagos.qudimar.com/api/v2/start/male)
+// Devuelve todos los jugadores enlistados
