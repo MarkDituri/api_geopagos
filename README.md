@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://webgeopagos.qudimar.com/Assets/images/logo-2.png" width="400"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://webgeopagos.qudimar.com/Assets/images/logo.png" width="400"></a></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -11,7 +11,7 @@
 
 Proyecto challenge para Geopagos, consiste en una API la cual permite arrojar resultados de distintos torneos (femenino y masculino), armando la lógica de cada ronda, para así dar con un jugador ganador, se utilizó Laravel PHP para llevarlo a cabo.
 
-## FRONTEND
+## FrontEnd
 
 A fines de darle valor agregado al proyecto, se desarrolló un frontend a modo de aplicación web, para poder consumir la API y así, quede demostrado el posible correcto uso de la API desde un 'externo' en este caso una web.<br>
 
@@ -42,55 +42,27 @@ Durante la evaluación de cada ronda, se utiliza la función "compareSkills()" p
 ## Pasos para instalar el repositorio
 <ul>
     <li>
-        1- Clona el repositorio: Abre una terminal y navega hasta la ubicación en la que deseas clonar el repositorio. Luego, ejecuta el siguiente comando para clonar el repositorio:
+        1- Clona el repositorio: Abre una terminal y navega hasta la ubicación en la que deseas clonar el repositorio. Luego, ejecuta el siguiente comando para clonar el repositorio:<br>                    <code>git clone https://github.com/MarkDituri/api_geopagos.git</code>
     </li>
-
-        <li>
-        1- Clona el repositorio: Abre una terminal y navega hasta la ubicación en la que deseas clonar el repositorio. Luego, ejecuta el siguiente comando para clonar el repositorio:
+      <li>
+        2- Accede al directorio del proyecto: Una vez clonado el repositorio, accede al directorio del proyecto utilizando el siguiente comando:<br>
+          <code>cd api_geopagos</code>
     </li>
-
         <li>
-        1- Clona el repositorio: Abre una terminal y navega hasta la ubicación en la que deseas clonar el repositorio. Luego, ejecuta el siguiente comando para clonar el repositorio:
+        3- Instala las dependencias: A continuación, debes instalar las dependencias del proyecto Laravel. Ejecuta el siguiente comando para que Composer descargue e instale todas las dependencias necesarias:<br>
+        <code>composer install</code>
     </li>
-
         <li>
-          2- Accede al directorio del proyecto: Una vez clonado el repositorio, accede al directorio del proyecto utilizando el siguiente comando:
-
-            bash
-            Copy code
-            cd <nombre_del_proyecto>
+        4- Genera una nueva clave de aplicación: Laravel utiliza una clave de aplicación para encriptar los datos. Ejecuta el siguiente comando para generar una nueva clave de aplicación:<br>
+        <code>php artisan key:generate</code>
+    </li>
+    <li>
+        5- Ejecuta las migraciones: Las migraciones de Laravel se utilizan para crear la estructura de la base de datos. Ejecuta el siguiente comando para ejecutar las migraciones y crear las tablas necesarias:<br>
+        <code>php artisan migrate</code>
+    </li>
+    <li>
+        6- Inicia el servidor de desarrollo: Finalmente, puedes iniciar el servidor de desarrollo de Laravel ejecutando el siguiente comando:tablas necesarias:<br>
+        <code>php artisan serve</code>
     </li>
 </ul>
 
-bash
-Copy code
-git clone <URL_DEL_REPOSITORIO>
-
-
-
-Instala las dependencias: A continuación, debes instalar las dependencias del proyecto Laravel. Ejecuta el siguiente comando para que Composer descargue e instale todas las dependencias necesarias:
-
-Copy code
-composer install
-Copia el archivo de configuración: Laravel requiere un archivo de configuración .env para funcionar correctamente. En el proyecto clonado, busca el archivo .env.example y crea una copia renombrada como .env:
-
-bash
-Copy code
-cp .env.example .env
-Genera una nueva clave de aplicación: Laravel utiliza una clave de aplicación para encriptar los datos. Ejecuta el siguiente comando para generar una nueva clave de aplicación:
-
-vbnet
-Copy code
-php artisan key:generate
-Configura la base de datos: Abre el archivo .env en un editor de texto y configura los parámetros de conexión a la base de datos según tus necesidades. Asegúrate de establecer los valores correctos para DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME y DB_PASSWORD.
-
-Ejecuta las migraciones: Las migraciones de Laravel se utilizan para crear la estructura de la base de datos. Ejecuta el siguiente comando para ejecutar las migraciones y crear las tablas necesarias:
-
-Copy code
-php artisan migrate
-Esto ejecutará todas las migraciones pendientes en tu base de datos.
-
-Inicia el servidor de desarrollo: Finalmente, puedes iniciar el servidor de desarrollo de Laravel ejecutando el siguiente comando:
-
-Copy code
-php artisan serve
