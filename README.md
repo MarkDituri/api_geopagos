@@ -17,8 +17,7 @@ Podras encontrrar la documentacion detallada sobre la API aqui: [documentation](
 
 ## API URL PROD
 
-[https://apigeopagos.qudimar.com/api/v2/players](https://apigeopagos.qudimar.com/api/v2/players)
-// Devuelve todos los jugadores enlistados
+[https://apigeopagos.qudimar.com/api/v2/players](https://apigeopagos.qudimar.com/api/v2/players)// Devuelve todos los jugadores enlistados
 
 [https://apigeopagos.qudimar.com/api/v2/tournaments](https://apigeopagos.qudimar.com/api/v2/tournaments)
 
