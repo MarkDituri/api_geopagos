@@ -20,7 +20,7 @@ A fines de darle valor agregado al proyecto, se desarrolló un frontend a modo d
 ![image](https://github.com/MarkDituri/api_geopagos/assets/87947352/04efedc6-f2ff-4ec0-b009-e9fbf49ea858)
 <br>
 
-## API 
+## API & Swagger
 
 Podrás encontrar la documentación detallada sobre la API aquí: [SWAGGER documentation](https://qudimar.com/documentation/geopagos/), de todos modos a continuación dejo los fundamentos básicos de la API
 
