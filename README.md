@@ -40,16 +40,34 @@ En la base de datos se encuentran registrados un total de 32 jugadores, distribu
 Durante la evaluación de cada ronda, se utiliza la función "compareSkills()" para comparar los diferentes habilidades de los jugadores. Se siguen las siguientes directrices: tanto los hombres como las mujeres poseen los siguientes atributos de habilidad: 'force', 'speed', 'response' y 'luck'. Sin embargo, en el torneo femenino, solo se considera la habilidad 'response', mientras que en el torneo masculino se toman en cuenta tanto 'force' como 'speed'. Al comparar los valores iniciales de habilidad de cada género, se realiza un balance y se suma a este resultado total la variable 'luck'. De esta manera, se simula la influencia de la suerte, la cual puede afectar positiva o negativamente las rondas de cada enfrentamiento. 
 
 ## Pasos para instalar el repositorio
-1- Clona el repositorio: Abre una terminal y navega hasta la ubicación en la que deseas clonar el repositorio. Luego, ejecuta el siguiente comando para clonar el repositorio:
+<ul>
+    <li>
+        1- Clona el repositorio: Abre una terminal y navega hasta la ubicación en la que deseas clonar el repositorio. Luego, ejecuta el siguiente comando para clonar el repositorio:
+    </li>
+
+        <li>
+        1- Clona el repositorio: Abre una terminal y navega hasta la ubicación en la que deseas clonar el repositorio. Luego, ejecuta el siguiente comando para clonar el repositorio:
+    </li>
+
+        <li>
+        1- Clona el repositorio: Abre una terminal y navega hasta la ubicación en la que deseas clonar el repositorio. Luego, ejecuta el siguiente comando para clonar el repositorio:
+    </li>
+
+        <li>
+          2- Accede al directorio del proyecto: Una vez clonado el repositorio, accede al directorio del proyecto utilizando el siguiente comando:
+
+            bash
+            Copy code
+            cd <nombre_del_proyecto>
+    </li>
+</ul>
 
 bash
 Copy code
 git clone <URL_DEL_REPOSITORIO>
-Accede al directorio del proyecto: Una vez clonado el repositorio, accede al directorio del proyecto utilizando el siguiente comando:
 
-bash
-Copy code
-cd <nombre_del_proyecto>
+
+
 Instala las dependencias: A continuación, debes instalar las dependencias del proyecto Laravel. Ejecuta el siguiente comando para que Composer descargue e instale todas las dependencias necesarias:
 
 Copy code
