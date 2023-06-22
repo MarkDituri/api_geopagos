@@ -1,0 +1,199 @@
+swagger: "2.0"
+info:
+  title: API Documentation GEOPAGOS CUP
+  version: 1.0.0
+paths:
+  /:
+    get:
+      description: "Get home page"
+      responses:
+        200:
+          description: "Success"
+  /api/login:
+    post:
+      description: "Login API"
+      responses:
+        200:
+          description: "Success"
+  /api/v2/players:
+    get:
+      description: "Get all players"
+      responses:
+        200:
+          description: "Success"
+  /api/v2/players/{slug}:
+    get:
+      description: "Get player by slug"
+      parameters:
+        - name: slug
+          in: path
+          description: "Player slug"
+          required: true
+          type: string
+      responses:
+        200:
+          description: "Success"
+          schema:
+            type: object
+            properties:
+              data:
+                type: object
+                properties:
+                  id_player:
+                    type: integer
+                    example: 11
+                  first_name:
+                    type: string
+                    example: "Jammie"
+                  last_name:
+                    type: string
+                    example: "Okuneva"
+                  age:
+                    type: integer
+                    example: 28
+                  gender:
+                    type: string
+                    example: "male"
+                  country:
+                    type: string
+                    example: "Cayman Islands"
+                  slug:
+                    type: string
+                    example: "voluptates-asperiores-perspiciatis-aut-enim-perferendis-adipisci-voluptatum"
+                  skill_id:
+                    type: integer
+                    example: 11
+                  skill:
+                    type: object
+                    properties:
+                      force:
+                        type: integer
+                        example: 86
+                      speed:
+                        type: integer
+                        example: 66
+                      response:
+                        type: integer
+                        example: 75
+                      luck:
+                        type: integer
+                        example: 28
+                  created_at:
+                    type: string
+                    example: "07/04/2023"
+  /api/v2/start/{gender}:
+    get:
+      description: "Get start tournament by gender"
+      parameters:
+        - name: gender
+          in: path
+          description: "Gender"
+          required: true
+          type: string
+      responses:
+        200:
+          description: "Success"
+          schema:
+            type: object
+            properties:
+              playoff:
+                type: object
+                properties:
+                  8tavos:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        player1:
+                          type: object
+                          properties:
+                            data:
+                              type: object
+                            winner:
+                              type: boolean
+                            loser:
+                              type: boolean
+                        player2:
+                          type: object
+                          properties:
+                            data:
+                              type: object
+                            winner:
+                              type: boolean
+                            loser:
+                              type: boolean
+                  4tos:
+                    type: array
+                    items:
+                      type: object
+                  Semifinals:
+                    type: array
+                    items:
+                      type: object
+                  Final:
+                    type: array
+                    items:
+                      type: object
+              winnerCup:
+                type: object
+                properties:
+                  players:
+                    type: object
+              tournament:
+                type: array
+                items:
+                  type: object
+  /api/v2/tournaments:
+    get:
+      description: "Get all tournaments"
+      responses:
+        200:
+          description: "Success"
+  /api/v2/tournaments/{gender}:
+    get:
+      description: "Get tournament by gender"
+      parameters:
+        - name: gender
+          in: path
+          description: "Gender"
+          required: true
+          type: string
+      responses:
+        200:
+          description: "Success"
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                      example: 1
+                    name:
+                      type: string
+                      example: "Melany Cup 2023"
+                    description:
+                      type: string
+                      example: "Maxime veritatis et dignissimos dolorem consequatur. At eos dolores ."
+                    type:
+                      type: string
+                      example: "playoffs"
+                    direction:
+                      type: string
+                      example: "355 Romaguera Bridge"
+                    year:
+                      type: string
+                      example: "2023"
+                    gender:
+                      type: string
+                      example: "male"
+                    slug:
+                      type: string
+                      example: "qui-repellendus-est-cupiditate-fuga-mollitia-rerum-nihil"
+                    created_at:
+                      type: string
+                      example: "18/08/2022 00:11:52"
+     
