@@ -22,7 +22,7 @@ A fines de darle valor agregado al proyecto, se desarrolló un frontend a modo d
 
 ## API 
 
-Podrás encontrar la documentación detallada sobre la API aquí: [documentation](https://qudimar.com/documentation/geopagos/), de todos modos a continuación dejo los fundamentos básicos de la API
+Podrás encontrar la documentación detallada sobre la API aquí: [SWAGGER documentation](https://qudimar.com/documentation/geopagos/), de todos modos a continuación dejo los fundamentos básicos de la API
 
 -    [https://apigeopagos.qudimar.com/api/v2/players](https://apigeopagos.qudimar.com/api/v2/players)
 // Devuelve todos los jugadores enlistados
