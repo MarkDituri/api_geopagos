@@ -9,19 +9,21 @@
 
 ## Sobre el Poroyect
 
-Proyecto challenge para geopagos, consiste en una API la cual permite arrojar resultados de disitntos torneos (femenino y masuculino) armando la logica de cada ronda, para asi dar con un jugador ganador, se utilizo laravel
+Proyecto challenge para Geopagos, consiste en una API la cual permite arrojar resultados de distintos torneos (femenino y masculino), armando la lógica de cada ronda, para así dar con un jugador ganador, se utilizó Laravel PHP para llevarlo a cabo.
 
 ## FRONTEND
 
-A fines de darle valor agregado al proyecto, se desarrollo un frontend a modo de aplicaicon web, para poder consumir la API y asi, quede demostrado el posible correcto uso de la API desde un 'externo' en este caso una web.<br>
+A fines de darle valor agregado al proyecto, se desarrolló un frontend a modo de aplicación web, para poder consumir la API y así, quede demostrado el posible correcto uso de la API desde un 'externo' en este caso una web.<br>
+
 <b>VISITA LA WEB AQUI ->:</b> [https://webgeopagos.qudimar.com/](https://webgeopagos.qudimar.com/)<br>
+
 ![image](https://github.com/MarkDituri/api_geopagos/assets/87947352/04efedc6-f2ff-4ec0-b009-e9fbf49ea858)
 <br>
 
 
 ## API
 
-Podras encontrrar la documentacion detallada sobre la API aqui: [documentation](https://laravel.com/docs), de todos modos a continuacion dejo los fumdanos basicos de la api
+Podrás encontrar la documentación detallada sobre la API aquí: [documentation](https://laravel.com/docs), de todos modos a continuación dejo los fundamentos básicos de la API
 
 ## API URL PROD
 
@@ -33,3 +35,7 @@ Podras encontrrar la documentacion detallada sobre la API aqui: [documentation](
 
 -    [https://apigeopagos.qudimar.com/api/v2/start/male](https://apigeopagos.qudimar.com/api/v2/start/male)
 // Devuelve los resultados de la simulacion del torneo ya sea /male o /female tanto los resultados de cada ronda, como al propio winner
+
+## Sobre la logica de los torneos
+
+Existen 32 jugadores en la base de datos 16 mujeres y 16 hombres
