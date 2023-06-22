@@ -11,6 +11,10 @@
 
 Proyecto challenge para geopagos, consiste en una API la cual permite arrojar resultados de disitntos torneos (femenino y masuculino) armando la logica de cada ronda, para asi dar con un jugador ganador, se utilizo laravel
 
+## FRONTEND
+A fines de darle valor agregado al proyecto, se desarrollo un frontend a modo de aplicaicon web, para poder consumir la API y asi, quede demostrado el posible correcto uso de la API desde un 'externo' en este caso una web.
+<b>VISITA LA WEB AQUI ->:</b> [https://webgeopagos.qudimar.com/](https://webgeopagos.qudimar.com/)
+
 ## API
 
 Podras encontrrar la documentacion detallada sobre la API aqui: [documentation](https://laravel.com/docs), de todos modos a continuacion dejo los fumdanos basicos de la api
