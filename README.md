@@ -21,9 +21,7 @@ Podras encontrrar la documentacion detallada sobre la API aqui: [documentation](
 // Devuelve todos los jugadores enlistados
 
 -    [https://apigeopagos.qudimar.com/api/v2/tournaments](https://apigeopagos.qudimar.com/api/v2/tournaments)
-
 // Devuelve todos los torneos disponbiles en este caso 2 (femeninos y masculinos )
 
 -    [https://apigeopagos.qudimar.com/api/v2/start/male](https://apigeopagos.qudimar.com/api/v2/start/male)
-
 // Devuelve los resultados de la simulacion del torneo ya sea /male o /female tanto los resultados de cada ronda, como al propio winner
