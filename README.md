@@ -13,8 +13,8 @@ Proyecto challenge para geopagos, consiste en una API la cual permite arrojar re
 
 ## FRONTEND
 
-A fines de darle valor agregado al proyecto, se desarrollo un frontend a modo de aplicaicon web, para poder consumir la API y asi, quede demostrado el posible correcto uso de la API desde un 'externo' en este caso una web.
-<b>VISITA LA WEB AQUI ->:</b> [https://webgeopagos.qudimar.com/](https://webgeopagos.qudimar.com/)
+A fines de darle valor agregado al proyecto, se desarrollo un frontend a modo de aplicaicon web, para poder consumir la API y asi, quede demostrado el posible correcto uso de la API desde un 'externo' en este caso una web.<br>
+<b>VISITA LA WEB AQUI ->:</b> [https://webgeopagos.qudimar.com/](https://webgeopagos.qudimar.com/)<br>
 ![image](https://github.com/MarkDituri/api_geopagos/assets/87947352/04efedc6-f2ff-4ec0-b009-e9fbf49ea858)
 <br>
 
