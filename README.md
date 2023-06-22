@@ -38,3 +38,41 @@ Podrás encontrar la documentación detallada sobre la API aquí: [documentation
 En la base de datos se encuentran registrados un total de 32 jugadores, distribuidos equitativamente entre 16 mujeres y 16 hombres. Cada jugador participará en su respectivo torneo, el cual se llevará a cabo mediante rondas sucesivas para determinar el ganador de cada etapa. Antes de iniciar las rondas y obtener los resultados, se realiza una función de "suffle()" en la lista de jugadores. Este proceso simula un sorteo y reordena aleatoriamente los enfrentamientos y cruces en cada ronda, asegurando que la configuración sea diferente en cada ocasión. Como resultado, el ganador de cada ronda puede variar.
 
 Durante la evaluación de cada ronda, se utiliza la función "compareSkills()" para comparar los diferentes habilidades de los jugadores. Se siguen las siguientes directrices: tanto los hombres como las mujeres poseen los siguientes atributos de habilidad: 'force', 'speed', 'response' y 'luck'. Sin embargo, en el torneo femenino, solo se considera la habilidad 'response', mientras que en el torneo masculino se toman en cuenta tanto 'force' como 'speed'. Al comparar los valores iniciales de habilidad de cada género, se realiza un balance y se suma a este resultado total la variable 'luck'. De esta manera, se simula la influencia de la suerte, la cual puede afectar positiva o negativamente las rondas de cada enfrentamiento. 
+
+## Pasos para instalar el repositorio
+1- Clona el repositorio: Abre una terminal y navega hasta la ubicación en la que deseas clonar el repositorio. Luego, ejecuta el siguiente comando para clonar el repositorio:
+
+bash
+Copy code
+git clone <URL_DEL_REPOSITORIO>
+Accede al directorio del proyecto: Una vez clonado el repositorio, accede al directorio del proyecto utilizando el siguiente comando:
+
+bash
+Copy code
+cd <nombre_del_proyecto>
+Instala las dependencias: A continuación, debes instalar las dependencias del proyecto Laravel. Ejecuta el siguiente comando para que Composer descargue e instale todas las dependencias necesarias:
+
+Copy code
+composer install
+Copia el archivo de configuración: Laravel requiere un archivo de configuración .env para funcionar correctamente. En el proyecto clonado, busca el archivo .env.example y crea una copia renombrada como .env:
+
+bash
+Copy code
+cp .env.example .env
+Genera una nueva clave de aplicación: Laravel utiliza una clave de aplicación para encriptar los datos. Ejecuta el siguiente comando para generar una nueva clave de aplicación:
+
+vbnet
+Copy code
+php artisan key:generate
+Configura la base de datos: Abre el archivo .env en un editor de texto y configura los parámetros de conexión a la base de datos según tus necesidades. Asegúrate de establecer los valores correctos para DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME y DB_PASSWORD.
+
+Ejecuta las migraciones: Las migraciones de Laravel se utilizan para crear la estructura de la base de datos. Ejecuta el siguiente comando para ejecutar las migraciones y crear las tablas necesarias:
+
+Copy code
+php artisan migrate
+Esto ejecutará todas las migraciones pendientes en tu base de datos.
+
+Inicia el servidor de desarrollo: Finalmente, puedes iniciar el servidor de desarrollo de Laravel ejecutando el siguiente comando:
+
+Copy code
+php artisan serve
