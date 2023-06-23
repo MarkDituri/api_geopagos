@@ -59,7 +59,8 @@ Durante la evaluación de cada ronda, se utiliza la función "compareSkills()" p
     </li>
     <li>
         5- Ejecuta las migraciones: Las migraciones de Laravel se utilizan para crear la estructura de la base de datos. Ejecuta el siguiente comando para ejecutar las migraciones y crear las tablas necesarias:<br>
-        <code>php artisan migrate</code>
+        <code>php artisan migrate</code><br>
+        <i>PD: De todos modos tambien se encuentra un archivo api.sql, si desea improtarlo directamente a su servidor de SQL</i>
     </li>
     <li>
         6- Inicia el servidor de desarrollo: Finalmente, puedes iniciar el servidor de desarrollo de Laravel ejecutando el siguiente comando:tablas necesarias:<br>
