@@ -34,7 +34,7 @@ Podrás encontrar la documentación detallada sobre la API aquí: [SWAGGER docum
 -    [https://apigeopagos.qudimar.com/api/v2/start/male](https://apigeopagos.qudimar.com/api/v2/start/male)
 // Devuelve los resultados de la simulación del torneo, ya sea /male o /female tanto los resultados de cada ronda, como al propio winner
 
-## Sobre la logica de los torneos
+## Sobre la lógica de los torneos
 
 En la base de datos se encuentran registrados un total de 32 jugadores, distribuidos equitativamente entre 16 mujeres y 16 hombres. Cada jugador participará en su respectivo torneo, el cual se llevará a cabo mediante rondas sucesivas para determinar el ganador de cada etapa. Antes de iniciar las rondas y obtener los resultados, se realiza una función de "suffle()" en la lista de jugadores. Este proceso simula un sorteo y reordena aleatoriamente los enfrentamientos y cruces en cada ronda, asegurando que la configuración sea diferente en cada ocasión. Como resultado, el ganador de cada ronda puede variar.
 
