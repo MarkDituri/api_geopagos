@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Sobre el Poroyect
+## Sobre el Proyecto
 
 Proyecto challenge para Geopagos, consiste en una API la cual permite arrojar resultados de distintos torneos (femenino y masculino), armando la lógica de cada ronda, para así dar con un jugador ganador, se utilizó Laravel PHP para llevarlo a cabo.
 
